@@ -1,0 +1,91 @@
+.nav-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    margin: 2% auto auto 2%;
+    width: 6%;
+    height: 94%;
+    background-color: #161D2F;
+    border-radius: 10px 10px 10px 10px;
+    z-index: 2;
+}
+
+.logo {
+  margin-top: 25%;
+}
+
+.navbar {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  height: 70%;
+}
+
+nav ul {
+    list-style: none; /* Remove the default list styling */
+    padding: 0;
+  }
+
+  nav ul li {
+    margin: 10px 0;
+  }
+
+  nav ul li a.active .menu-icon{
+    color: #FFFFFF;
+  }
+
+  nav ul li a.active .bookmark1,
+  nav ul li a.active .theater1,
+  nav ul li a.active .series1 {
+    color: #FFFFFF;
+  }
+
+  nav ul li .menu-icon:hover,
+  nav ul li .theater1:hover,
+  nav ul li .series1:hover,
+  nav ul li .bookmark1:hover {
+    color: #FC4747;
+  }
+
+  .login-profile {
+    width: 50px;
+    height: 50px;
+    background-image: url(../assets/icon-profile.png);
+    background-size: cover;
+    background-position: center;
+    border: 1px solid #FFFFFF;
+    border-radius: 50%;
+    display: flex;
+    background-color: #161D2F;
+    cursor: pointer;
+  }
+
+  /* Styling the logout pop-up */
+.logout-popup {
+  position:relative;
+  transform: translate(0%, -55%);
+  display:flex;
+  background-color: transparent;
+  border: none;
+}
+
+/* Smooth animation when the pop-up is displayed */
+.show-popup {
+  display: block;
+  position: relative;
+  background: transparent;
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  animation: fadeIn 0.5s ease-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

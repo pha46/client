@@ -1,0 +1,34 @@
+.bookmark-icon-cover2 {
+    position:relative;
+    display: flex;
+    justify-content: center;
+    padding: 0%;
+    margin: 0%;
+    left: 220px;
+    border: none;
+    border-radius: 50%;
+    top: 20px;
+    width: 35px;
+    height: 35px;
+    background-color: gray;
+  }
+  
+  .bookmark-icon2 {
+    color: #FFFFFF;
+    border-radius: 50%;
+    display: block;
+    position: absolute;
+    top: 5px;
+    padding: 0%;
+    margin: 0%;
+  }
+  
+  .bookmark-active2 {
+    color: #FFFFFF;
+    border-radius: 50%;
+    display: block;
+    position: absolute;
+    top: 5px;
+    padding: 0%;
+    margin: 0%;
+  }

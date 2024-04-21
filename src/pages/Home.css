@@ -1,0 +1,131 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-left: 10%;
+    overflow-y: auto;
+    z-index: 1;
+}
+
+.search {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    height: 50px;
+    margin-top: 4%;
+    background-color: transparent;
+}
+
+input[type='text'] {
+    height: 100%;
+    width: 100%;
+    font-family: Outfit Medium;
+    font-size: large;
+    margin-left: 15px;
+    outline: none;
+    background-color: transparent;
+    border: 0;
+    color: #FFFFFF;
+}
+
+.scroll-container {
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .card-container {
+    display: flex;
+    white-space: nowrap;
+    animation: scroll 25s linear infinite; /* Adjust the speed as per your requirement */
+  }
+
+  /* Add a hover effect to pause the scrolling */
+  .card-container:hover {
+    animation-play-state: paused;
+  }
+  
+  /* CSS for the scrolling animation */
+  @keyframes scroll {
+    0%   { transform: translateX(+20%); }
+    100% { transform: translateX(-100%); }
+  }
+
+.body {
+    margin-bottom: 20px;
+}
+
+.card {
+    flex-shrink: 0;
+    width: 400px;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #FFFFFF;
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 70%;
+}
+
+.card-container2 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 16px;
+}
+
+
+.card2 {
+    flex-shrink: 0;
+    width: 280px;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #FFFFFF;
+}
+
+.bookmark-icon-cover {
+  position:relative;
+  display: flex;
+  justify-content: center;
+  padding: 0%;
+  margin: 0%;
+  left: 340px;
+  border: none;
+  border-radius: 50%;
+  top: 20px;
+  width: 35px;
+  height: 35px;
+  background-color: gray;
+}
+
+.bookmark-icon {
+  color: #FFFFFF;
+  border-radius: 50%;
+  display: block;
+  position: absolute;
+  top: 5px;
+  padding: 0%;
+  margin: 0%;
+}
+
+.bookmark-active {
+  color: #FFFFFF;
+  border-radius: 50%;
+  display: block;
+  position: absolute;
+  top: 5px;
+  padding: 0%;
+  margin: 0%;
+}
+
+.bookmark-icon:hover,
+.bookmark-icon-cover:hover {
+  color: black;
+  background-color: #FFFFFF;
+}
